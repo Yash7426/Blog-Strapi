@@ -17,7 +17,7 @@ export default {
   bootstrap({ strapi }) {
     var io = require("socket.io")(strapi.server.httpServer, {
       cors: { // cors setup
-        origin: "http://localhost:3000",// frontend url
+        origin: "https://blogbunny.vercel.app/",// frontend url
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true,
